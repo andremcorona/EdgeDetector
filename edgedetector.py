@@ -9,6 +9,8 @@ img = get_image()
 # Reduce noise and smoothen the image using GaussianBlur
 smoothed_img = cv2.GaussianBlur(img, (5, 5), 0)
 
+# Replication of GaussianBlur
+
 # Apply the Canny edge detector
 edges = cv2.Canny(smoothed_img, 5, 150, apertureSize = 3, L2gradient=True)
 
